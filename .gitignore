@@ -1,0 +1,29 @@
+# Ignorar archivos de Python compilados
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorar entornos virtuales
+.venv/
+venv/
+env/
+/htmlcov/
+.tox/
+.pytest_cache/
+
+# Ignorar archivos específicos de sistemas operativos
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Ignorar archivos de PyCharm
+.idea/
+
+# Ignorar archivos de datos grandes o generados (ajusta según necesites)
+# *.csv
+# *.xlsx
+# *.parquet
+# /data/*.csv # Ejemplo: ignorar todos los csv dentro de una carpeta 'data'
+
+# Ignorar archivos de logs u otros temporales
+*.log
+*.tmp
