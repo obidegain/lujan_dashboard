@@ -13,6 +13,10 @@ Este informe detalla las respuestas obtenidas, brindándonos una guía para orga
 ¡Prepárense para la diversión y el disfrute en Luján!
 """)
 
+# === IMPORTANT MESSAGE ===
+st.warning("LOS ENCARGADOS DE LAS COMPRAS TENDRAN QUE SER CRITERIOSOS Y BASAR SUS DECISIONES EN LOS DATOS PRESENTES EN ESTA PAGINA.")
+# =========================
+
 # Create tabs for each main group
 tab_titles = list(groups.keys())
 tabs = st.tabs([title.capitalize() for title in tab_titles])
