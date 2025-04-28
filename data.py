@@ -178,7 +178,7 @@ summary_paragraphs = {
     'picadita': "La sección de la picadita muestra una variedad de comentarios y preferencias libres por parte de los participantes.",
     'pizzas': "Las pippppppshas más esperadas son las de Jamón y morrón, Muzza y Rúcula con jamón crudo, que lideran las preferencias del grupo.",
     'pasta': "En pastas, las salsas Bolognesa y Rosa tienen la misma popularidad (40.91% cada una). La mayoría come Pastas con queso y casi todos disfrutan de mojar el pancito en la salcita (93.33%).",
-    'guisito': "Para el guiso, la Lentejas son las claras favoritas (66.67%).",
+    'guisito': "Para el guiso, la Lentejas son las claras favoritas (80%).",
     'arroz': "La gran mayoría (86.67%) está de acuerdo con un arroz con poio.",
     'extras': "La sección de 'Alguna comida que no se mencionó' muestra una variedad de sugerencias individuales.",
     'bebidas': "Para tomar con alcohol, el Vino tinto y el Vermú son los más elegidos, seguidos de cerca por Fernet con coca. Para opciones sin alcohol, el Agua es la preferida (45.83%), seguida por la Coca (20.83%).",
