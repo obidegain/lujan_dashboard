@@ -83,9 +83,9 @@ manual_summary_dfs['¿Con qué acompañas el asadito?'] = pd.DataFrame({
 
 # DataFrame for 'Mira como esta el diaaaaaa, ¿De qué preferis el guisito?'
 manual_summary_dfs['Guiso'] = pd.DataFrame({
-    'Count': [12, 3, 3],
-    'Percentage': [66.67, 16.67, 16.67]
-}, index=['Lentejas', 'Fideo moñito', 'pa'])
+    'Count': [12, 3,],
+    'Percentage': [80.00, 20.00, ]
+}, index=['Lentejas', 'Fideo moñito',])
 
 # DataFrame for 'A la pasta, ¿Qué salsita le ponemos?'
 manual_summary_dfs['Pasta'] = pd.DataFrame({
