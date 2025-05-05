@@ -10,4 +10,5 @@ with st.expander("¿Quién es Usuario X?", expanded=False):
     with st.popover("¿Quién es Usuario X?"):
         st.write("Ese boton no era.")
         if st.button("Es este (:"):
+            st.balloons()
             st.image("https://i.postimg.cc/g27zgspq/Whats-App-Image-2025-04-26-at-16-13-34.jpg")
