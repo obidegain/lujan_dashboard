@@ -1,5 +1,16 @@
 import streamlit as st
 import pandas as pd
+import io
+
+def to_excel(df_to_convert):
+    output = io.BytesIO()
+    # Escribir el DataFrame en el buffer de BytesIO como un archivo Excel
+    # 'index=False' para no escribir el índice del DataFrame en el archivo Excel
+    with pd.ExcelWriter(output, engine='openpyxl') as writer:
+        df_to_convert.to_excel(writer, index=False, sheet_name='Sheet1')
+    # Obtener los bytes del buffer
+    processed_data = output.getvalue()
+    return processed_data
 
 st.set_page_config(page_title="Comparador de Lentes de Contacto", layout="wide")
 
@@ -31,6 +42,14 @@ with st.expander("👓 Ver todos los lentes de una óptica", expanded=False):
     if optica_seleccionada:
         df_filtrado = df[df['Store Name'] == optica_seleccionada]
 
+        df_filtrado_xlsx = to_excel(df_filtrado)
+        st.download_button(
+            label="📥 Descargar DataFrame como XLSX",
+            data=df_filtrado_xlsx,
+            file_name='mi_dataframe.xlsx',
+            mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+        )
+
         st.markdown("### Lentes Scrappeados de una óptica")
         st.write(f"Se encontraron {len(df_filtrado)} coincidencias")
 
@@ -59,6 +78,8 @@ with st.expander("👓 Ver todos los lentes de una óptica", expanded=False):
         )
     else:
         st.warning("Por favor selecciona una óptica para ver los detalles.")
+
+
 
 
 with st.expander("📊 Ver todos los lentes scrappeados", expanded=False):
